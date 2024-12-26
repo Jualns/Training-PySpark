@@ -2,23 +2,30 @@
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.appName('Spark Playground').getOrCreate()
 
-#enter the file path here
-file_path = "/datasets/customers.csv"
+try:
 
-#read the file
-df = spark.read.format('csv').option('header', 'true').load(file_path)
+    #enter the file path here
+    file_path = "/workspaces/Training-PySpark/datasets/customers.csv"
+    
 
-# Registering the DataFrame as a temporary view
-df.createOrReplaceTempView("customers")
+    #read the file
+    df = spark.read.format('csv').option('header', 'true').load(file_path)
 
-query = """
-SELECT customer_id, name, purchase_amount 
-FROM customers 
-WHERE purchase_amount >= 100 AND age >= 30;
-"""
+    # Registering the DataFrame as a temporary view
+    df.createOrReplaceTempView("customers")
 
-# Using SQL to select columns
-selected_df = spark.sql(query)
+    query = """
+    SELECT customer_id, name, purchase_amount 
+    FROM customers 
+    WHERE purchase_amount >= 100 AND age >= 30;
+    """
 
-# Display the final DataFrame using the display() function.
-display(selected_df)
+    # Using SQL to select columns
+    selected_df = spark.sql(query)
+
+    # Display the final DataFrame using the display() function.
+    selected_df.show()
+except Exception as err:
+    print(f"Erro: {err}")
+finally:
+    spark.stop()
