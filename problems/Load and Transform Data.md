@@ -61,3 +61,8 @@ The output DataFrame (`df_result`) includes customers who:
 
 In the example:
 - **Bob Smith** and **Diana Prince** meet these criteria, so they are included in the result.
+
+## Solutions
+
+- [Using SQL]()
+- [Using PySpark]()
