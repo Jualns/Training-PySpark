@@ -33,7 +33,7 @@ try:
     df = spark.read.format('csv').option('header', 'true').load(file_path)
 
     # Registering the DataFrame as a temporary view
-    df.createOrReplaceTempView(file_path.split("/")[-1].split(".csv")[0])
+    df.createOrReplaceTempView(file_path.split("/")[-1].split(".")[0])
 
     selected_df = SQL_solution(spark)
 
