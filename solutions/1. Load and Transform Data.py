@@ -3,10 +3,6 @@ from pyspark.sql.functions import col
 from pyspark.sql.dataframe import DataFrame
 from StartSparkSession import start_spark
 
-# Initialize Spark session
-spark = start_spark()
-file_path = "../Training-PySpark/datasets/customers.csv"
-
 def SQL_solution(spark: SparkSession):
     query = """
         SELECT customer_id, name, purchase_amount 
@@ -28,13 +24,16 @@ def PySpark_solution(df: DataFrame):
 
     return df_selected
 
+# Initialize Spark session
+spark = start_spark()
+file_path = "../Training-PySpark/datasets/customers.csv"
 
 try:
     # Read the file
     df = spark.read.format('csv').option('header', 'true').load(file_path)
 
     # Registering the DataFrame as a temporary view
-    df.createOrReplaceTempView("customers")
+    df.createOrReplaceTempView(file_path.split("/")[-1].split(".csv")[0])
 
     selected_df = SQL_solution(spark)
 
