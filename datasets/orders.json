@@ -1,0 +1,122 @@
+[
+    {
+        "customer_id": "C001",
+        "order_id": "O1001",
+        "products": [
+            {
+                "product_name": "Laptop",
+                "product_price": 1500
+            },
+            {
+                "product_name": "Mouse",
+                "product_price": 25
+            }
+        ]
+    },
+    {
+        "customer_id": "C002",
+        "order_id": "O1002",
+        "products": [
+            {
+                "product_name": "Keyboard",
+                "product_price": 75
+            }
+        ]
+    },
+    {
+        "customer_id": "C003",
+        "order_id": "O1003",
+        "products": [
+            {
+                "product_name": "Monitor",
+                "product_price": 250
+            },
+            {
+                "product_name": "HDMI Cable",
+                "product_price": 15
+            }
+        ]
+    },
+    {
+        "customer_id": "C004",
+        "order_id": "O1004",
+        "products": [
+            {
+                "product_name": "Printer",
+                "product_price": 120
+            }
+        ]
+    },
+    {
+        "customer_id": "C005",
+        "order_id": "O1005",
+        "products": [
+            {
+                "product_name": "Smartphone",
+                "product_price": 999
+            },
+            {
+                "product_name": "Phone Case",
+                "product_price": 19
+            }
+        ]
+    },
+    {
+        "customer_id": "C006",
+        "order_id": "O1006",
+        "products": [
+            {
+                "product_name": "Tablet",
+                "product_price": 450
+            }
+        ]
+    },
+    {
+        "customer_id": "C007",
+        "order_id": "O1007",
+        "products": [
+            {
+                "product_name": "Smartwatch",
+                "product_price": 299
+            }
+        ]
+    },
+    {
+        "customer_id": "C008",
+        "order_id": "O1008",
+        "products": [
+            {
+                "product_name": "Camera",
+                "product_price": 799
+            },
+            {
+                "product_name": "Tripod",
+                "product_price": 49
+            }
+        ]
+    },
+    {
+        "customer_id": "C009",
+        "order_id": "O1009",
+        "products": [
+            {
+                "product_name": "Laptop",
+                "product_price": 1600
+            }
+        ]
+    },
+    {
+        "customer_id": "C010",
+        "order_id": "O1010",
+        "products": [
+            {
+                "product_name": "Headphones",
+                "product_price": 150
+            },
+            {
+                "product_name": "Earbuds",
+                "product_price": 50
+            }
+        ]
+    }
+]
