@@ -2,10 +2,12 @@
 
 This repository contains a collection of solutions to interview problems focused on PySpark and SQL. The problems were sourced from various online platforms, and each solution was implemented as a way to practice and enhance my skills in data processing, querying, and analytics using PySpark and SQL.
 
-## Repository Structure
+## Repository Structure  
 
-- **PySpark Solutions**: Contains Jupyter notebooks and Python scripts that demonstrate the application of PySpark for big data processing.
-- **SQL Solutions**: Includes SQL queries for a variety of problems, covering topics such as joins, subqueries, aggregation, and data manipulation.
+- **Problems**: Contains detailed descriptions of the problems, including examples and explanations to provide context and clarity.  
+- **Datasets**: Provides a collection of tables used to solve the problems, offering diverse scenarios for practice and exploration.  
+- **Solutions**: Includes Python scripts demonstrating the application of SQL to solve the problems. Each file features SQL queries addressing various challenges, such as joins, subqueries, aggregations, and data manipulation. Additionally, the solutions include variations implemented using PySpark for broader applicability.  
+
 
 ## Skills Developed
 
@@ -15,8 +17,4 @@ This repository contains a collection of solutions to interview problems focused
 
 ## Contributing
 
-Feel free to fork this repository, make improvements, or add new interview problems and solutions.
-
-## License
-
-This repository is licensed under the MIT License.
+Feel free to fork this repository, make improvements, or add new problems and solutions.
